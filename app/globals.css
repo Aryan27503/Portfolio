@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables for Theme System */
+:root {
+  /* Dark Mode Defaults */
+  --text-primary: 226 232 240; /* slate-100 */
+  --text-secondary: 203 213 225; /* slate-300 */
+  --text-tertiary: 148 163 184; /* slate-400 */
+  --text-muted: 100 116 139; /* slate-500 */
+  
+  --bg-primary: 10 10 10; /* #0a0a0a */
+  --bg-card: 15 23 42; /* slate-900 */
+  
+  --text-accent: 59 130 246; /* blue-500 */
+  --text-accent-light: 147 197 253; /* blue-300 */
+}
+
+html.light {
+  /* Light Mode */
+  --text-primary: 15 23 42; /* slate-900 */
+  --text-secondary: 51 65 85; /* slate-700 */
+  --text-tertiary: 71 85 105; /* slate-600 */
+  --text-muted: 100 116 139; /* slate-500 */
+  
+  --bg-primary: 248 250 252; /* slate-50 */
+  --bg-card: 255 255 255; /* white */
+  
+  --text-accent: 37 99 235; /* blue-600 */
+  --text-accent-light: 59 130 246; /* blue-500 */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+html.dark body {
+  background: radial-gradient(1000px 400px at 10% 10%, rgba(59,130,246,0.06), transparent 10%),
+              radial-gradient(800px 300px at 90% 90%, rgba(139,92,246,0.04), transparent 10%),
+              var(--bg-dark);
+  color: rgb(var(--text-primary));
+}
+
+html.light body {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e0e7ff 100%);
+  color: rgb(var(--text-primary));
+}
+
+body {
+  font-family: theme('fontFamily.body');
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark .card-glass {
+  background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  backdrop-filter: blur(8px) saturate(120%);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+html.light .card-glass {
+  background: linear-gradient(135deg, rgba(255,255,255,0.6), rgba(255,255,255,0.5));
+  backdrop-filter: blur(8px) saturate(120%);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.08);
+}
+
+.section-padding {
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding { 
+    padding: 6rem 2rem; 
+  }
+}
