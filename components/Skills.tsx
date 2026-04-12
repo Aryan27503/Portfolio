@@ -8,25 +8,25 @@ export default function Skills(){
     {
       icon: Lightbulb,
       title: 'Product Skills',
-      items: ['Product Strategy', 'User Research', 'Roadmapping', 'Feature Prioritization', 'Product Metrics'],
+      items: ['Product Strategy', 'User Research', 'MVP Development', 'Roadmapping', 'Feature Prioritization', 'Customer Discovery', 'GTM Strategy', 'Stakeholder Management'],
       footer: 'Focused on structured problem-solving and MVP thinking'
     },
     {
       icon: Code2,
       title: 'Technical Skills',
-      items: ['API Integration', 'SQL Basics', 'Data Analysis', 'AI Product Understanding'],
+      items: ['API Integration', 'SQL Basics', 'Data Analysis', 'AI Product Understanding', 'Prompt Engineering'],
       footer: 'Helps me understand systems and collaborate with engineers'
     },
     {
       icon: Wrench,
       title: 'Tools & Platforms',
-      items: ['Figma', 'Power BI', 'Notion', 'Jira', 'VS Code'],
+      items: ['Figma', 'Power BI', 'Notion', 'VS Code', 'Cursor / Lovable'],
       footer: 'Tools I use for design, analysis, and execution'
     },
     {
       icon: BarChart3,
       title: 'Analytics & Metrics',
-      items: ['Funnel Analysis', 'Retention Metrics', 'North Star Metrics', 'A/B Testing'],
+      items: ['Funnel Analysis', 'Retention Metrics', 'A/B Testing', 'North Star Metrics'],
       footer: 'Focused on measuring meaningful product outcomes'
     }
   ]

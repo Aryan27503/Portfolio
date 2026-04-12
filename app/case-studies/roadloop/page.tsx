@@ -51,6 +51,30 @@ export default function RoadLoopCaseStudyPage() {
         </div>
       </section>
 
+      {/* MVP Section */}
+      <section className="max-w-6xl mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="md:col-span-2">
+            <h2 className="text-3xl font-heading font-bold mb-6">MVP</h2>
+            <p className="text-slate-300 leading-relaxed mb-6">
+              Built a functional MVP to test how early navigation alerts can improve driver decision-making and reduce missed turns.
+            </p>
+            
+            <a
+              href="https://road-loop-mvp.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-6 py-4 rounded-lg bg-gradient-to-r from-electric/20 to-purple-600/20 hover:from-electric/40 hover:to-purple-600/40 border border-electric/30 hover:border-electric/60 transition-all group hover:scale-105"
+            >
+              <span className="font-semibold text-electric group-hover:text-electric transition">
+                View RoadLoop MVP
+              </span>
+              <ExternalLink size={20} className="text-electric flex-shrink-0 group-hover:translate-x-1 transition" />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Notion Link Section - FIRST */}
       <section className="max-w-6xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
